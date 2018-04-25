@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cstdio>
-#include <conio.h>
 #include <exception>
 #include <ctime>
 
@@ -21,12 +20,6 @@ int main(int argc, char* argv[]){
 	srand(time(NULL));
 
 
-
-	_getch();
-	return 0;
-}
-
-/*
 	//Stack test
 
 	Stack<int> s;
@@ -47,8 +40,9 @@ int main(int argc, char* argv[]){
 	}
 
 	s.show();
-*/
-
+	
+	return 0;
+}
 
 /*
 

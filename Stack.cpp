@@ -27,12 +27,9 @@ void Stack<T>::pop() {
 	if (empty())
 		throw std::range_error("Stack is empty! Unable to .pop()");
 	Node<T>* tempNode = head->nextNode;
+	delete head;
 	head = tempNode;
-
-	/*
-	Dodac dealokowanie
-	*/
-
+	
 	--size;
 }
 template<typename T>
